@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Shop 1</title>
+    <link rel="icon" href="../images/logo-shop-quan-ao-nam-9.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="../images/logo-shop-quan-ao-nam-9.jpg" type="image/x-icon">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/product.css">
+
+    <!-- js -->
+    <script src="../js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sanpham.js"></script>
+</head>
+
+<body>
+    <!-- top header -->
+    <div class="container-fluid">
+        <div class="row text-center" id="top-header">
+            <div class="col-md-3 my-2 p-1">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span id="dateNow">04/09/2025</span>
+            </div>
+            <div class="col-md-3 my-2 p-1">
+                <ul id="top-social-media">
+                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 my-2 p-1">
+                <ul id="top-contact">
+                    <li class="list-inline-item mx-2"><a href="../html/thanh-vien.html"><i
+                                class="fa-solid fa-users"></i> Thành viên</a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/gio-hang.html"><i
+                                class="fa-solid fa-cart-shopping"></i> Giỏ
+                            hàng</a>
+                    </li>
+                    <li class="list-inline-item mx-2"><a href="../html/dang-ky.html"><i class="fa-solid fa-key"></i>
+                            Đăng
+                            kí</a></li>
+                    <li class="list-inline-item mx-2 active "><a href="../html/dang-nhap.html"><i
+                                class="fa-solid fa-right-from-bracket"></i> Đăng
+                            nhập</a></li>
+
+                    <li class="list-inline-item mx-2"><a href="../html/lien-he.html"><i
+                                class="fa-solid fa-info-circle"></i> Liên
+                            hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end top header -->
+
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top p-2" id="navbar-menu">
+        <!-- Brand and logo -->
+        <a class="navbar-brand" href="../html/index.html"><img src="../images/logo-shop-quan-ao-nam-9.jpg" alt="logo"
+            style="width:100px;"></a>
+        <a href="../html/index.html" class="navbar-brand font-weight-bold"> VGKING SHOP</a>
+        <!-- toggler hiện menu khi thu nhỏ -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-dark"></i>
+        </button>
+
+
+        <!-- navbar links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" id="nav-menu-link">
+                <li class="nav-item ">
+                    <a class="nav-link" href="../html/index.html"><i class="fa fa-home" aria-hidden="true"></i> TRANG
+                        CHỦ</a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="../html/shop.html"><i class="fa fa-shop" aria-hidden="true"></i> CỬA
+                        HÀNG</a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                        <i class="fa fa-list"></i>
+                        SẢN PHẨM
+                    </a>
+                    <div class="dropdown-menu">
+                          <a href="../html/shop.html" class="list-group-item list-group-item-action ">Tất cả sản phẩm</a>
+                        <a href="../html/sanpham1.html" class="list-group-item list-group-item-action">Áo Thun Nam</a>
+                         <a href="../html/sanpham2.html" class="list-group-item list-group-item-action">Quần Thun nam</a>                  
+                        <a href="../html/sanpham5.html" class="list-group-item list-group-item-action">Đồ Bộ</a>
+                    </div>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="../html/gio-hang.html"> <i class="fa-solid fa-money-check-dollar"></i>
+                        THANH TOÁN </a>
+                </li>
+            </ul>
+
+            <!-- nav right và mục tìm kiếm -->
+            <form id="nav-form-search" class="form-inline ml-auto" action="">
+
+
+                <!-- mục tìm kiếm -->
+                <div class="input-group" id="input-search-top">
+                    <!-- Mục tìm kiếm -->
+                    <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-light" type="submit">
+                            <i class="fas fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+
+            </form>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="../html/index.html">Trang chủ</a></li>
+            <li class="breadcrumb-item"><a href="../html/shop.html">Cửa hàng</a></li>
+            <li class="breadcrumb-item active" aria-current="page">Áo Thun Nam</li>
+        </ol>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-3" id="aside">
+                <div class=" px-2">
+                    <div class="list-group" id="category-list-nav">
+                        <h4>Danh mục sản phẩm</h4>
+                        <a href="../html/shop.html" class="list-group-item list-group-item-action ">Tất cả sản phẩm</a>
+                        
+                </div>
+
+                <div class="loc-san-pham my-2 mx-1 ">
+                    <div class="my-2 filterSP">
+                        <h4 class="text-center">Lọc theo giá</h4>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Từ">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text">-</span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="Đến">
+                        </div>
+                    </div>
+
+                    <!-- Lọc theo giảm giá -->
+                    <div class="my-2 filterSP">
+                        <h4 class="text-center">Giảm giá</h4>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="discount" id="discountYes">
+                            <label class="form-check-label" for="discountYes">Có giảm giá</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="discount" id="discountNo">
+                            <label class="form-check-label" for="discountNo">Không giảm giá</label>
+                        </div>
+                    </div>
+
+                    <div class="my-2 p-2">
+                        <button class="btn btn-primary btn-block" id="locbanhkem">Lọc</button>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-9" id="section">
+                <div id="top"></div>
+                <div id="productList" class="row">
+                    <!-- Đây là nơi để hiển thị danh sách sản phẩm -->
+                </div>
+                <ul id="pagination" class="pagination justify-content-center">
+                    <!-- Đây là nơi để hiển thị thanh phân trang -->
+                </ul>
+                <script>
+                    let currentCategory = 'Quần Thun Nam'; // Danh mục hiện tại
+                    $(document).ready(function () {
+                        displayProducts(productList, currentCategory);
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title w-100 text-center" id="productModalLabel">Thông tin sản phẩm</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
+                </div>
+                <div id="alertContainer"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-end">
+            <div class="col-md-3">
+                <div class="shopping-cart">
+                    <button class="btn shopping-cart-btn dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="num-item-in-cart rounded-circle">0</span>
+                        <i class="fa-solid fa-cart-plus"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-item figure text-center rounded-0 p-3 mx-auto empty-cart-message"
+                            style="display: none;">
+                            <div class="figure-caption text-bg text-big">Chưa có sản phẩm nào trong giỏ hàng</div>
+                        </div>
+                        <div class="cart-items-container">
+                            <!-- Danh sách sản phẩm trong giỏ hàng sẽ được thêm vào đây -->
+                        </div>
+                        <button class="btn w-100 text-md mx-auto mt-3 pay-btn">Thanh toán</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- footer start -->
+    <div id="footer" class="mt-5 w-100">
+        <div class="container">
+            <div id="footer-main">
+                <div class="row">
+                    <!-- giới thiệu -->
+                    <div class="col-md-5 mt-3 ">
+                        <div class="cty-name">
+                            <a href="../html/home.html"><img src="../images/logo-shop-quan-ao-nam-9.jpg" style="width: 70px;"
+                                    alt="logo">
+                            </a>
+                            <span class="ten-cty"> CÔNG TY TNHH VGKING SHOP </span>
+                        </div>
+
+                        <div class="cty-about mt-2">
+                            <span class="contact-icon">
+                                <span><i class="fa-solid fa-bookmark"></i></span>
+                            </span>
+                            <div class="contact-detail">
+                                Chuyên cung cấp các loại quần áo chất lượng cao. Mang đến niềm vui cho mọi
+                                người.
+                            </div>
+                        </div>
+
+                        <div class="cty-ban-quyen mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-check"></i>
+                            </span>
+                            <div class="contact-detail">
+                                © Mọi hình ảnh được sử dụng trong website thuộc quyền sở hữu của
+                                <a href="https://VGKING.com.vn/">VGKINGShop</a>.
+                                Mọi giao dịch đều là ảo không thể thanh toán.
+                            </div>
+                        </div>
+
+                        <div class="cty-muc-dich mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-school"></i>
+                            </span>
+                            <div class="contact-detail">
+                                Đây là dự án bài tập lớn của môn Hệ thống Công nghệ
+                                website. Thực hiện viết và xây dựng lên website bán hàng. Mọi hình ảnh và sản phẩm
+                                trong
+                                website chỉ mang tính thử nghiệm, không mang tính chất thương mại.
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- liên hệ -->
+                    <div class="col-md-3 mt-3">
+                        <div class="cty-title-contact">
+                            <span class="ten-cty">Liên hệ</span>
+                        </div>
+
+                        <div class="cty-address mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </span>
+                            <div class="contact-detail">
+                                Địa chỉ: 123 Đường Nguyễn trường tộ, Phường 5, Quận 10, TP.HCM
+                            </div>
+                        </div>
+
+                        <div class="cty-tel mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-phone"></i>
+                            </span>
+                            <div class="contact-detail">
+                                <a href="tel:+028 987 6543">Điện thoại: +028 987 6543</a>
+                            </div>
+                        </div>
+
+                        <div class="cty-mail mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-envelope"></i>
+                            </span>
+                            <div class="contact-detail">
+                                <a href="mailto:cskh@VGKINGShop.com">Email: cskh@VGKINGShop.com</a>
+                            </div>
+                        </div>
+
+                        <div class="cty-web mt-2">
+                            <span class="contact-icon">
+                                <i class="fa-solid fa-globe"></i>
+                            </span>
+                            <div class="contact-detail">
+                                <a href="https://VGKING.com.vn/">Website: www.VGKING.com.vn</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Theo dõi chúng tôi -->
+                    <div class="col-md-4 mt-3">
+                        <div class="cty-follow-us mb-3">
+                            <span class="ten-cty mb-2">Tương tác với chúng tôi</span>
+                            <ul id="bottom-social-media" class="font-size-lagre">
+                                <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                                <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                                <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                            </ul>
+                        </div>
+
+                        <div class="mb-3">
+                            <span class="ten-cty my-2">Phương thức thanh toán</span>
+                            <ul class="nav" id="bottom-payment">
+                                <li class="mx-1"><img src="../images/tt1.jpg" alt=""></li>
+                                <li class="mx-1"><img src="../images/tt2.jpg" alt=""></li>
+                                <li class="mx-1"><img src="../images/tt3.jpg" alt=""></li>
+                            </ul>
+                        </div>
+    
+                        <div class="mb-3">
+                            <span class="ten-cty my-2">Phương thức vận chuyển</span>
+                            <ul class="nav" id="bottom-transport">
+                                <li class="mx-1"><img src="../images/vc1.jpg" alt=""></li>
+                                <li class="mx-1"><img src="../images/vc2.png" alt=""></li>
+                                <li class="mx-1"><img src="../images/vc3.jpg" alt=""></li>
+                                <li class="mx-1"><img src="../images/vc4.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+  <!-- footer bôttom -->
+    <div id="footer-bottom">
+        <div class="row" style=" width: 100%;">
+            <div class="col-md-12">
+
+                <p> © 2025 VGKING Shop . All Right Reserved. VGKING Shop .</p>
+
+            </div>
+
+        </div>
+    </div>
+    </div>
+    </div>
+    <!-- footer endd -->
+
+</body>
+
+
+</html>

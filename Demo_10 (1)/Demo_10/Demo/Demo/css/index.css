@@ -1,0 +1,701 @@
+/* Custom styles */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fun font for kids */
+    font-size: 16px; /* Smaller base font */
+    line-height: 1.5;
+    color:#212529; /* Bright pink text */
+    background-color: #3fd9ea; /* Light pink background */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: #212529; /* Hot pink for links */
+}
+
+.img-full {
+    height: 100%;
+    width: 100%;
+}
+
+nav {
+    margin-bottom: 10px;
+}
+.nav-item {
+    margin-right: 8px; /* Reduced spacing */
+}
+
+#navbar-menu {
+    background-color: #66d7fb;
+}
+
+#select-product-category {
+    max-width: 140px; /* Smaller width */
+}
+
+/* demo */
+/* Trang trí cho dropdown menu */
+.dropdown-menu {
+    background-color: #6cbcf5; /* Light pink */
+}
+
+.dropdown-menu a {
+    color:  #212529  !important; /* White text */
+}
+
+.dropdown-menu a:hover {
+    background-color: #001aff; /* Magenta hover */
+}
+
+.fa-calendar-days {
+    color: #142bff; /* Pink */
+}
+
+.fa-facebook {
+    color: #00b7ff; /* Bright blue */
+}
+
+.fa-instagram {
+    color: #fb0480; /* Hot pink */
+}
+
+.fa-tiktok {
+    color: #000;
+}
+
+.fa-youtube {
+    color: #ff4500; /* Bright red */
+}
+
+.fa-users {
+    color: #32cd32; /* Lime green */
+}
+
+.fa-cart-shopping {
+    color: #ff4500; /* Orange-red */
+}
+
+.fa-right-to-bracket {
+    color: #4c00ff; /* Magenta */
+}
+
+.fa-right-from-bracket {
+    color: #4400ff; /* Magenta */
+}
+
+.fa-key {
+    color: #ff4500; /* Orange-red */
+}
+
+.fa-bolt {
+    color: #ff4500; /* Orange-red */
+}
+
+#top-header .fab {
+    font-size: 18px; /* Smaller icons */
+}
+
+.carousel-inner img {
+    width: 50%;
+}
+
+@media (min-width: 1400px) and (max-width: 1700px) {
+    .carousel-inner img {
+        height: 500px; /* Smaller height */
+    }
+}
+
+.carousel-caption {
+    font-weight: bold;
+    text-shadow: 3px 3px 3px #6969ff; /* Subtle pink shadow */
+    position: absolute;
+    top: 50%;
+    font-family: 'Comic Sans MS', Courier, monospace;
+    color: #fff;
+    font-size: 18px; /* Smaller text */
+}
+
+.custom-hr {
+    border-top: 2px solid #ff1493; /* Bright pink */
+    width: 20%; /* Smaller width */
+}
+
+.centered-text {
+    font-size: 20px; /* Smaller size */
+    font-weight: bold;
+    color: #6973ff; /* Hot pink */
+    margin: 0 15px; /* Reduced margin */
+}
+
+.spring-banner {
+  background-color: #7dcef1;
+    border: 2px solid #212529; /* Magenta */
+}
+.spring-banner h4 {
+    color: #080607; /* Bright pink */
+    font-size: 18px; /* Smaller */
+}
+.summer-banner {
+   background-color: #7dcef1;
+    border: 2px solid #212529; /* Orange */
+}
+.summer-banner h4 {
+    color: #110d0d;
+    font-size: 18px;
+}
+.autumn-banner {
+   background-color: #7dcef1;
+    border: 2px solid #212529; /* Bright pink */
+}
+.autumn-banner h4 {
+    color: #16100e; /* Orange */
+    font-size: 18px;
+}
+.winter-banner {
+   background-color: #7dcef1;
+    border: 2px solid #212529; /* Hot pink */
+}
+.winter-banner h4 {
+    color: #08080a; /* Magenta */
+    font-size: 18px;
+}
+
+legend {
+    width: fit-content;
+    font-size: 20px; /* Smaller */
+    font-weight: bold;
+    color: #212529; /* Hot pink */
+    padding: 0 15px; /* Reduced padding */
+}
+
+#vote-5-star .list-inline-item:not(:last-child) {
+    margin-right: 0;
+}
+
+#vote-5-star .fa {
+    font-size: 10px; /* Smaller stars */
+    color: #ff4500; /* Orange */
+}
+
+/* foooter */
+#footer {
+    background-color: #74d8f6; /* Hot pink */
+    padding: 10px; /* Reduced padding */
+    color: #fff;
+    text-align: justify;
+}
+
+#footer .fa-solid {
+    color: #fff;
+}
+
+#footer a {
+    color: #fff;
+}
+
+#footer-main {
+    padding: 20px 0; /* Reduced */
+    margin: 0 -10px; /* Smaller margins */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer-bottom {
+    background-color: #ff1414; /* Bright pink */
+    display: flex;
+    border-top: 1px solid #fff;
+    align-items: center;
+    text-align: center;
+    font-size: 0.8rem; /* Smaller text */
+    color: #fff;
+}
+#bottom-payment{
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Reduced */
+    margin-left: -10px;
+}
+#bottom-payment img {
+    width: 50px; /* Smaller size */
+    height: 50px; /* Smaller size */
+    margin-right: 5px; /* Reduced margin */
+    border-radius: 50px;
+    
+}
+#bottom-transport{
+    display: flex;
+    align-items: center;
+    padding: 10px; /* Reduced */
+    margin-left: -10px;
+}
+#bottom-transport img {
+    width: 50px; /* Smaller size */
+    height: 50px; /* Smaller size */
+    margin-right: 5px; /* Reduced margin */
+    border-radius: 50px;
+    
+}
+.contact-icon {
+    display: inline-block;
+    float: left;
+    color: #0008ff; /* Magenta */
+}
+
+.contact-detail {
+    padding-left: 20px; /* Reduced */
+}
+
+.contact-detail>a {
+    color: #fff;
+}
+
+.cty-name>a {
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+}
+
+#list-icon-category .col {
+    margin: 0;
+    padding: 0;
+}
+
+/* Định dạng chung cho các mục danh mục sản phẩm */
+.home-category {
+    text-align: center;
+    padding: 8px; /* Reduced */
+    background-color: #99d1ff; /* Light pink */
+    border: 2px solid #212529; /* Hot pink */
+    border-radius: 15px; /* Smaller radius */
+    transition: box-shadow 0.2s ease; /* Subtle transition */
+    height: 100%;
+}
+
+.home-category:hover {
+    box-shadow: 0 4px 8px rgba(255, 105, 180, 0.5); /* Smaller shadow */
+}
+
+.home-category-img {
+    overflow: hidden;
+}
+
+.home-category-img img {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+    max-height: 150px; /* Smaller height */
+    border-radius: 30%; /* Smaller radius */
+}
+
+.home-category-title {
+    margin-top: 8px; /* Reduced */
+}
+
+.home-category-title span {
+    color: #212529; /* Bright pink */
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 14px; /* Smaller */
+}
+
+.home-category-title span:hover {
+    color: #1482ff; /* Magenta */
+    text-decoration: none;
+}
+
+.display-4 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #212529;
+    text-transform: uppercase;
+    text-shadow: 1px 1px #b7b7b7;
+}
+
+#countdown {
+    font-size: 20px; /* Smaller */
+    font-weight: bold;
+    color: #212529; /* Orange-red */
+}
+
+.progress {
+    height: 20px; /* Smaller */
+    background-color: #ffb6c1; /* Light pink */
+    position: relative;
+    border-radius: 10px;
+}
+
+.progress-bar {
+    background-color: #69a8ff; /* Hot pink */
+    transition: width 0.5s ease-in-out; /* Smoother */
+    border-radius: 10px;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px #ff1493; /* Smaller shadow */
+    font-size: 12px; /* Smaller */
+}
+
+#flash-sale-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#flash-sale-top a {
+    color: #212529; /* Orange-red */
+    margin-right: 15px; /* Reduced */
+}
+
+/* CSS để canh giữa các biểu tượng font-awesome */
+#dichvucongty .fa-solid {
+    font-size: 40px; /* Smaller */
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px; /* Reduced */
+}
+
+/* Định dạng màu cho các biểu tượng font-awesome */
+.fa-truck-fast {
+    color: #32cd32; /* Lime green */
+}
+
+.fa-headset {
+    color: #00ffb7; /* Magenta */
+}
+
+.fa-medal {
+    color: #ff4800; /* Orange */
+}
+
+.fa-ticket {
+    color: #14fffb; /* Bright pink */
+}
+
+/* CSS để thêm hiệu ứng cho card */
+#dichvucongty .card {
+    box-shadow: 0 0 8px rgba(255, 105, 180, 0.3); /* Subtle shadow */
+    border-radius: 15px; /* Smaller */
+    transition: box-shadow 0.2s ease;
+    height: 100%;
+    background-color: #99d1ff; /* Light pink */
+}
+
+#dichvucongty .card:hover {
+    box-shadow: 0 0 12px rgba(255, 20, 147, 0.5);
+}
+
+#dichvucongty .card-body {
+    text-align: center;
+}
+
+.ten-cty {
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px; /* Smaller */
+}
+
+#bottom-social-media .fab {
+    font-size: 2.5rem; /* Smaller icons */
+}
+
+.breadcrumb {
+    background-color: #e2e2e5; /* Light pink */
+    padding: 10px; /* Reduced */
+    margin-bottom: 0;
+    border-radius: 10px; /* Smaller */
+}
+
+.breadcrumb-item {
+    font-size: 14px; /* Smaller */
+}
+
+.breadcrumb-item a {
+    color: #212529; /* Hot pink */
+    text-decoration: none;
+}
+
+.breadcrumb-item.active {
+    color: #212529; /* Magenta */
+}
+
+/* CSS cho phần danh mục sản phẩm */
+#aside {
+ background-color: #b6fffd;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgb(105 215 255 / 30%); /* Subtle shadow */
+}
+
+#aside h4 {
+    font-size: 1rem; /* Smaller */
+    font-weight: bold;
+    color: #fff;
+    background-color: #698fff; /* Hot pink */
+    text-align: center;
+    padding: 10px; /* Reduced */
+    border-bottom: 2px dashed #fff;
+    margin: 0;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.list-group {
+    width: 100%;
+}
+
+.list-group-item {
+    background-color: #fff0f5; /* Very light pink */
+    border: none;
+    color: #212529; /* Bright pink */
+    font-size: 14px; /* Smaller */
+}
+
+.list-group-item:hover {
+    background-color: #e23048; /* Hot pink */
+    color: #fff;
+}
+
+#category-list-nav {
+    border-radius: 20px; /* Smaller */
+    overflow: hidden;
+    box-shadow: 2px 2px 8px #ca3754; /* Subtle shadow */
+}
+
+.filterSP {
+    overflow: hidden;
+    width: 100%;
+    padding: 8px; /* Reduced */
+}
+
+.loc-san-pham {
+    background-color: #fff0f5; /* Very light pink */
+    border: 1px solid #e11929; /* Hot pink */
+    margin: 0;
+    padding: 0;
+    border-radius: 12px; /* Smaller */
+    box-shadow: 2px 2px 8px #f12e31;
+}
+
+.shopping-cart {
+    position: fixed;
+    top: 15%; /* Adjusted */
+    right: 0;
+    z-index: 9999;
+    background-color: #e32a2a; /* Hot pink */
+    border-radius: 10px; /* Smaller */
+}
+
+/* CSS cho nút giỏ hàng */
+.shopping-cart-btn {
+    background-color: transparent;
+    border: none;
+}
+
+/* CSS cho số lượng sản phẩm trong giỏ hàng */
+.num-item-in-cart {
+    background-color: #b7b7b7; /* Orange */
+    color: #fff;
+    font-size: 10px; /* Smaller */
+    padding: 3px 6px; /* Reduced */
+    border-radius: 50%;
+    position: absolute;
+    top: -8px;
+    right: 40px;
+}
+
+.dropdown-menu-right {
+    background-color: #e2e2e5; /* Hot pink */
+}
+
+/* CSS cho nút thanh toán */
+.pay-btn {
+    background-color: #e12c3b; /* Magenta */
+    color: #fff;
+    border-radius: 0;
+}
+
+.fa-cart-plus {
+    color:#fff; /* Orange-red */
+}
+
+/* CSS cho hình ảnh và mô tả khi giỏ hàng trống */
+.figure22 {
+    pointer-events: none;
+}
+
+.text-bg {
+    background-color:#e2e2e5; /* Light pink */
+    color: #212529; /* Bright pink */
+}
+
+.text-big {
+    font-size: 14px; /* Smaller */
+}
+
+.image-container {
+    max-width: 100%;
+    width: 100%;
+    height: 300px; /* Smaller height */
+    overflow: hidden;
+    position: relative;
+    border: 3px solid #e73131; /* Hot pink */
+    border-radius: 15px; /* Smaller */
+    box-shadow: 0 3px 8px rgba(255, 105, 180, 0.3);
+}
+
+.image-container img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade */
+    border-radius: 12px;
+}
+
+.image-container img.active {
+    opacity: 1;
+}
+
+.cart-item {
+    display: flex;
+    margin-bottom: 15px; /* Reduced */
+}
+
+.cart-item img {
+    width: 80px; /* Smaller */
+    height: 80px; /* Smaller */
+    margin-right: 15px; /* Reduced */
+    border-radius: 10px;
+    border: 2px solid #de252e; /* Hot pink */
+}
+
+/* Card and form styling */
+.card {
+    background-color: #b6f2ff;
+    border: 2px solid #698fff;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgb(105 198 255 / 30%);
+    padding: 15px;
+}
+
+.card-header {
+    background-color: #d72a41; /* Hot pink */
+    color: #fff;
+    border-radius: 12px 12px 0 0;
+    padding: 8px; /* Reduced */
+}
+
+.form-group {
+    margin-bottom: 12px; /* Reduced */
+}
+
+label {
+    font-size: 16px; /* Smaller */
+    color: #ff1418; /* Bright pink */
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="tel"],
+input[type="email"],
+input[type="date"] {
+    border: 2px solid #c6c6c9; /* Hot pink */
+    border-radius: 10px;
+    padding: 6px; /* Reduced */
+    font-size: 14px; /* Smaller */
+    background-color: #fff;
+    color: #ff1493; /* Pink text */
+    transition: border-color 0.2s ease;
+    width: 100%;
+}
+
+input:focus {
+    border-color: #6f00ff; /* Magenta */
+    box-shadow: 0 0 5px rgba(255, 0, 255, 0.3); /* Subtle glow */
+    outline: none;
+}
+
+.err {
+    font-size: 12px; /* Smaller */
+    color: #ff4500; /* Orange-red */
+    background-color: #ffe4e1; /* Light pink */
+    padding: 3px 6px; /* Reduced */
+    border-radius: 8px;
+    margin-top: 3px; /* Reduced */
+}
+
+.btn-primary {
+    background-color: #e93841; /* Hot pink */
+    border: none;
+    border-radius: 10px;
+    padding: 8px 12px; /* Reduced */
+    font-size: 14px; /* Smaller */
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #ff0062; /* Magenta */
+    box-shadow: 0 3px 8px rgba(255, 0, 255, 0.4);
+}
+
+/* Minimal animation */
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.image-container img.active {
+    animation: fadeIn 0.5s ease-in-out; /* Simple fade */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card {
+        padding: 10px;
+    }
+    .display-4 {
+        font-size: 18px;
+    }
+    .btn-primary {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+    .image-container {
+        height: 200px;
+    }
+    .form-group {
+        margin-bottom: 10px;
+    }
+    input[type="text"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="date"] {
+        padding: 5px;
+        font-size: 12px;
+    }
+    #aside {
+        padding: 8px;
+    }
+}

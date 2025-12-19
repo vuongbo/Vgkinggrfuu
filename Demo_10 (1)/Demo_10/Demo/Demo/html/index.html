@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VGKING SHOPPING</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/all.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/product.css">
+    
+
+    <!-- js -->
+    <script src="../js/jquery-3.5.1.slim.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/jquery-3.7.1.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/sanpham.js"></script>
+</head>
+
+<body>
+    <!-- top header -->
+    <div class="container-fluid">
+        <div class="row text-center" id="top-header">
+            <div class="col-md-3 my-2 p-1">
+                <i class="fa-solid fa-calendar-days"></i>
+                <span id="dateNow">04/09/2025</span>
+            </div>
+            <div class="col-md-3 my-2 p-1">
+                <ul id="top-social-media">
+                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                    <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 my-2 p-1">
+                <ul id="top-contact">
+                    <li class="list-inline-item mx-2"><a href="../html/thanh-vien.html"><i class="fa-solid fa-users"></i> Thành viên</a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/gio-hang.html"><i class="fa-solid fa-cart-shopping"></i> Giỏ hàng</a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/dang-ky.html"><i class="fa-solid fa-key"></i> Đăng ký</a></li>
+                    <li class="list-inline-item mx-2 active"><a href="../html/dang-nhap.html"><i class="fa-solid fa-right-from-bracket"></i> Đăng nhập</a></li>
+                    <li class="list-inline-item mx-2"><a href="../html/lien-he.html"><i class="fa-solid fa-info-circle"></i> Liên hệ</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end top header -->
+
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-xl navbar-dark sticky-top p-2" id="navbar-menu">
+        <a class="navbar-brand" href="../html/index.html"><img src="..//images/logo-shop-quan-ao-nam-9.jpg" alt="logo" style="width:100px;"></a>
+        <a href="../html/index.html" class="navbar-brand font-weight-bold">VGKING SHOP</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars text-dark"></i>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto" id="nav-menu-link">
+                <li class="nav-item active"><a class="nav-link" href="../html/index.html"><i class="fa fa-home" aria-hidden="true"></i> TRANG CHỦ</a></li>
+                <li class="nav-item"><a class="nav-link" href="../html/shop.html"><i class="fa fa-shop" aria-hidden="true"></i> CỬA HÀNG</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"><i class="fa fa-list"></i> SẢN PHẨM</a>
+                    <div class="dropdown-menu">
+                         <a href="../html/shop.html" class="list-group-item list-group-item-action ">Tất cả sản phẩm</a>
+                      
+                    </div>
+                </li>
+                <li class="nav-item"><a class="nav-link" href="../html/gio-hang.html"><i class="fa-solid fa-money-check-dollar"></i> THANH TOÁN</a></li>
+            </ul>
+
+            <form id="nav-form-search" class="form-inline ml-auto" action="">
+                <div class="input-group" id="input-search-top">
+                    <input type="text" class="form-control" placeholder="Tìm kiếm ...">
+                    <div class="input-group-append">
+                        <button class="btn btn-outline-secondary bg-light" type="submit"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <!-- carousel -->
+    
+        <a class="carousel-control-prev" href="#carouselId" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselId" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- end carousel -->
+
+    <!-- best sellers -->
+    <div class="container-fluid my-4" id="best-sellers-banner">
+        <div class="row">
+            <div class="col">
+                <form class="">
+                    <fieldset class="pr-1 pl-1 pb-3">
+                        <legend class="text-center">SẢN PHẨM BÁN CHẠY THEO MÙA</legend>
+                        <div class="row" id="bestSellersCarouselContainer">
+                            <!-- Spring -->
+                            <div class="col-lg-3 col-md-6 col-12 p-2">
+                                <div class="season-banner spring-banner text-center py-3">
+                                    <h4 class="season-title">
+                                        <i class="fa fa-leaf text-success"></i> Mùa Xuân
+                                    </h4>
+                                    <div class="product-card" data-product='{"name":"Áo Khoác Jean Nam","image":"../images/aobien.jpg","category":"Áo","description":"Áo khoác jean nam cá tính, bền bỉ.","price":680000,"discountPercent":10,"discountPrice":612000,"details":["- Jean dày","- Không phai","- Form chuẩn"]}'>
+    <div class="product-content">
+        <img src="../images/aobien.jpg" alt="Áo Khoác Jean" class="product-image img-fluid float-left mr-2">
+        <div class="product-title text-center">Áo Khoác Jean Nam</div>
+        <div class="product-description">Áo khoác jean nam cá tính, bền bỉ.</div>
+        <ul id="vote-5-star" class="mr-0">
+
+
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            </ul>
+                                            <div class="product-price-container">
+                                                <div class="product-discount">480.000 VND</div>
+                                                <div class="product-price">336.000 VND</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-discount">-30%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Summer -->
+                            <div class="col-lg-3 col-md-6 col-12 p-2">
+                                <div class="season-banner summer-banner text-center py-3">
+                                    <h4 class="season-title">
+                                        <i class="fa fa-sun text-warning"></i> Mùa Hè
+                                    </h4>
+                                   <div class="product-card" data-product='{"name":"Áo Polo Nam Cao Cấp","image":"../images/ao soc.jpg","category":"Áo","description":"Áo polo nam sang trọng, dễ phối đồ.","price":420000,"discountPercent":30,"discountPrice":294000,"details":["- Vải cá sấu","- Co giãn","- Thấm hút tốt"]}'>
+    <div class="product-content">
+        <img src="../images/ao soc.jpg" alt="Áo Polo Nam" class="product-image img-fluid float-left mr-2">
+        <div class="product-title text-center">Áo Polo Nam Cao Cấp</div>
+        <div class="product-description">Áo polo nam sang trọng, dễ phối đồ.</div>
+        <ul id="vote-5-star" class="mr-0">
+
+
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            </ul>
+                                            <div class="product-price-container">
+                                                <div class="product-discount">800.000 VND</div>
+                                                <div class="product-price">560.000 VND</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-discount">-30%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Autumn -->
+                            <div class="col-lg-3 col-md-6 col-12 p-2">
+                                <div class="season-banner autumn-banner text-center py-3">
+                                    <h4 class="season-title">
+                                        <i class="fa fa-tree text-orange"></i> Mùa Thu
+                                    </h4>
+                                    <div class="product-card" data-product='{"name":"Áo Sơ Mi Nam Trắng","image":"../images/sơmitrang.webp","category":"Áo","description":"Áo sơ mi nam lịch lãm, phù hợp đi làm.","price":380000,"discountPercent":25,"discountPrice":285000,"details":["- Vải kate","- Ít nhăn","- Slimfit"]}'>
+                                     <div class="product-content">
+                                     <img src="../images/sơmitrang.webp" alt="Áo Sơ Mi Nam" class="product-image img-fluid float-left mr-2">
+                                     <div class="product-title text-center">Áo Sơ Mi Nam Trắng</div>
+                                     <div class="product-description">Áo sơ mi nam lịch lãm, phù hợp đi làm.</div>
+                                     <ul id="vote-5-star" class="mr-0">
+
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            </ul>
+                                            <div class="product-price-container">
+                                                <div class="product-discount">590.000 VND</div>
+                                                <div class="product-price">472.000 VND</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-discount">-20%</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Winter -->
+                            <div class="col-lg-3 col-md-6 col-12 p-2">
+                                <div class="season-banner winter-banner text-center py-3">
+                                    <h4 class="season-title">
+                                        <i class="fa fa-snowflake text-primary"></i> Mùa Đông
+                                    </h4>
+                                    <div class="product-card" data-product='{"name":"Áo Hoodie Unisex","image":"../images/aoden.jpg","category":"Áo","description":"Áo hoodie unisex phong cách Hàn Quốc.","price":550000,"discountPercent":20,"discountPrice":440000,"details":["- Nỉ dày","- Có mũ","- Unisex"]}'>
+    <div class="product-content">
+        <img src="../images/aoden.jpg" alt="Áo Hoodie" class="product-image img-fluid float-left mr-2">
+        <div class="product-title text-center">Áo Hoodie Unisex</div>
+        <div class="product-description">Áo hoodie unisex phong cách Hàn Quốc.</div>
+        <ul id="vote-5-star" class="mr-0">
+
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                                <li class="list-inline-item"><i class="fa fa-star text-warning"></i></li>
+                                            </ul>
+                                            <div class="product-price-container">
+                                                <div class="product-discount">790.000 VND</div>
+                                                <div class="product-price">553.000 VND</div>
+                                            </div>
+                                        </div>
+                                        <div class="btn-discount">-30%</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- company services -->
+    <div class="container-fluid my-4" id="dichvucongty">
+        <h3 class="display-4">Chào mừng đến với VGKING Shop</h3>
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2 px-2">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <h5>Miễn phí vận chuyển</h5>
+                        <p>Chúng tôi cung cấp dịch vụ vận chuyển miễn phí trong nội thành để mang đến sự tiện lợi và tiết kiệm cho quý khách hàng.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2 px-2">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-headset"></i>
+                        <h5>Tư vấn 24/7</h5>
+                        <p>Đội ngũ chăm sóc khách hàng của chúng tôi luôn sẵn sàng tư vấn và hỗ trợ bạn 24/7, bất kể thời điểm nào trong ngày.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2 px-2">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-medal"></i>
+                        <h5>Sản phẩm chất lượng</h5>
+                        <p>Chúng tôi cam kết cung cấp các sản phẩm chất lượng cao, đảm bảo sự an toàn và đáp ứng được các tiêu chuẩn về chất lượng và hiệu suất.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-6 my-2 px-2">
+                <div class="card">
+                    <div class="card-body">
+                        <i class="fa-solid fa-ticket"></i>
+                        <h5>Nhiều ưu đãi khuyến mãi</h5>
+                        <p>Chúng tôi thường xuyên có nhiều chương trình ưu đãi và khuyến mãi hấp dẫn, giúp bạn tiết kiệm chi phí mua sắm và có được những sản phẩm tốt nhất.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end company services -->
+
+    <!-- category icons -->
+   <div class="container-fluid my-4" id="list-icon-category">
+    <h3 class="display-4">DANH MỤC</h3>
+    <div class="row p-2">
+
+        <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+            <a href="../html/sanpham1.html" class="text-decoration-none">
+                <div class="home-category">
+                    <div class="home-category-img">
+                        <img class="img-fluid" src="../images/aopolo.jpg" alt="ao thun nam">
+                    </div>
+                    <div class="home-category-title text-center">
+                        <span>Áo Thun Nam</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+            <a href="../html/sanpham2.html" class="text-decoration-none">
+                <div class="home-category">
+                    <div class="home-category-img">
+                        <img class="img-fluid" src="../images/aonuthun.webp" alt="ao so mi nam">
+                    </div>
+                    <div class="home-category-title text-center">
+                        <span>Áo Sơ Mi Nam</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+            <a href="../html/sanpham2.html" class="text-decoration-none">
+                <div class="home-category">
+                    <div class="home-category-img">
+                        <img class="img-fluid" src="../images/aodentrang.png" alt="ao polo nam">
+                    </div>
+                    <div class="home-category-title text-center">
+                        <span>Áo Polo Nam</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+            <a href="../html/sanpham5.html" class="text-decoration-none">
+                <div class="home-category">
+                    <div class="home-category-img">
+                        <img class="img-fluid" src="../images/aoden.jpg" alt="ao hoodie nam">
+                    </div>
+                    <div class="home-category-title text-center">
+                        <span>Áo Hoodie Nam</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+            <a href="../html/sanpham2.html" class="text-decoration-none">
+                <div class="home-category">
+                    <div class="home-category-img">
+                        <img class="img-fluid" src="../images/aobien.jpg" alt="ao khoac nam">
+                    </div>
+                    <div class="home-category-title text-center">
+                        <span>Áo Khoác Nam</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div class="col col-lg col-md-4 col-sm-4 col-4 my-1 px-1">
+            <a href="../html/sanpham1.html" class="text-decoration-none">
+                <div class="home-category">
+                    <div class="home-category-img">
+                        <img class="img-fluid" src="../images/ao soc.jpg" alt="ao vest nam">
+                    </div>
+                    <div class="home-category-title text-center">
+                        <span>Áo Vest Nam</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+</div>
+
+
+    <!-- flash sale -->
+    <div class="container-fluid p-3" id="flash-sale">
+        <div class="p-4" style="border: 5px dashed tomato;">
+            <h2 class="text-center display-4"><i class="fas fa-bolt"></i> Flash Sale - Sản phẩm giảm giá <i class="fas fa-bolt"></i></h2>
+            <div class="row mb-3" id="flash-sale-top">
+                <div class="countdown-timer">
+                    <div id="countdown"></div>
+                </div>
+                <div id="flash-sale-more">
+                    <a href="../html/shop.html"><span>Xem thêm ></span></a>
+                </div>
+            </div>
+            <div class="row" id="flash-sale-main">
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card" data-product='{"name":"Áo Thun Nam Basic - Mẫu 1","image":"../images/ao soc.jpg","category":"Áo thun","description":"Áo thun nam cotton thoáng mát, dễ phối đồ.","price":"180000","discountPercent":20,"discountPrice":144000,"details":["- Chất liệu: Cotton","- Form: Regular"]}'>
+    <img src="../images/ao soc.jpg" alt="" class="product-image img-fluid">
+    <div class="product-content d-flex flex-column">
+        <div class="product-title">Áo Thun Nam Basic - Mẫu 1</div>
+        <div class="product-description">Áo thun nam cotton thoáng mát, dễ phối đồ.</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">50.000đ</div>
+                                <div class="product-price">45.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount">-25%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card" data-product='{"name":"Áo Thun Nữ Form Rộng - Mẫu 2","image":"../images/aonuthun.webp","category":"Áo thun","description":"Áo thun nữ form rộng trẻ trung, năng động.","price":"190000","discountPercent":21,"discountPrice":150000,"details":["- Chất liệu: Cotton","- Form: Oversize"]}'>
+    <img src="../images/aonuthun.webp" alt="" class="product-image img-fluid">
+    <div class="product-content d-flex flex-column">
+        <div class="product-title">Áo Thun Nữ Form Rộng - Mẫu 2</div>
+        <div class="product-description">Áo thun nữ form rộng trẻ trung, năng động.</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">25.000đ</div>
+                                <div class="product-price">23.750₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount">-5%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                   <div class="product-card" data-product='{"name":"Áo Sơ Mi Nam Trắng - Mẫu 3","image":"../images/sơmitrang.webp","category":"Áo sơ mi","description":"Áo sơ mi nam lịch lãm, phù hợp đi làm.","price":"320000","discountPercent":22,"discountPrice":249000,"details":["- Chất liệu: Kate","- Công sở"]}'>
+    <img src="../images/sơmitrang.webp" alt="" class="product-image img-fluid">
+    <div class="product-content d-flex flex-column">
+        <div class="product-title">Áo Sơ Mi Nam Trắng - Mẫu 3</div>
+        <div class="product-description">Áo sơ mi nam lịch lãm, phù hợp đi làm.</div>
+                            <div class="product-price-container">
+                                <!-- <div class="product-discount">15.000₫</div> -->
+                                <div class="product-price">15.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount">0%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card" data-product='{"name":"Áo Hoodie Nam - Mẫu 4","image":"../images/aotrang.webp","category":"Áo hoodie","description":"Áo hoodie nam nỉ dày, giữ ấm tốt.","price":"450000","discountPercent":23,"discountPrice":349000,"details":["- Chất liệu: Nỉ","- Giữ ấm"]}'>
+    <img src="../images/aotrang.webp" alt="" class="product-image img-fluid">
+    <div class="product-content d-flex flex-column">
+        <div class="product-title">Áo Hoodie Nam - Mẫu 4</div>
+        <div class="product-description">Áo hoodie nam nỉ dày, giữ ấm tốt.</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">100.000đ</div>
+                                <div class="product-price">85.000đ</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount">-15%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                    <div class="product-card" data-product='{"name":"Quần Jean Nam - Mẫu 5","image":"../images/quạnean.webp","category":"Quần jean","description":"Quần jean nam form slimfit trẻ trung.","price":"420000","discountPercent":24,"discountPrice":319000,"details":["- Form: Slimfit","- Co giãn nhẹ"]}'>
+    <img src="../images/quạnean.webp" alt="" class="product-image img-fluid">
+    <div class="product-content d-flex flex-column">
+        <div class="product-title">Quần Jean Nam - Mẫu 5</div>
+        <div class="product-description">Quần jean nam form slimfit trẻ trung.</div>
+                            <div class="product-price-container">
+                                <!-- <div class="product-discount">490.000₫</div> -->
+                                <div class="product-price">600.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount">0%</div>
+                    </div>
+                </div>
+                <div class="col-md-4 col-lg-2 col-6 my-1 px-1">
+                  <div class="product-card" data-product='{"name":"Quần Short Nam - Mẫu 6","image":"../images/quandui.jpg","category":"Quần short","description":"Quần short nam năng động, thoải mái.","price":"250000","discountPercent":25,"discountPrice":189000,"details":["- Chất liệu: Thun","- Mùa hè"]}'>
+    <img src="../images/quandui.jpg" alt="" class="product-image img-fluid">
+    <div class="product-content d-flex flex-column">
+        <div class="product-title">Quần Short Nam - Mẫu 6</div>
+        <div class="product-description">Quần short nam năng động, thoải mái.</div>
+                            <div class="product-price-container">
+                                <div class="product-discount">10.000₫</div>
+                                <div class="product-price">7.000₫</div>
+                            </div>
+                        </div>
+                        <div class="btn-discount">-3%</div>
+                    </div>
+                </div>
+            </div>
+            <div class="progress mt-3">
+                <span class="progress-text">ĐANG BÁN CHẠY</span>
+                <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" style="width: 0%;" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+        </div>
+    </div>
+    <!-- end flash sale -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="productModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title w-100 text-center" id="productModalLabel">Thông tin sản phẩm</h3>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body" id="productModalBody">
+                    <!-- Nội dung sản phẩm sẽ được cập nhật bằng JavaScript -->
+                </div>
+                <div id="alertContainer"></div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!-- footer start -->
+   <div id="footer" class="mt-5 w-100">
+    <div class="container">
+        <div id="footer-main">
+            <div class="row">
+                <!-- giới thiệu -->
+                <div class="col-md-5 mt-3 ">
+                    <div class="cty-name">
+                        <a href="../html/home.html"><img src="" style="width: 70px;"
+                                alt="logo">
+                        </a>
+                        <span class="ten-cty"> CÔNG TY TNHH VGKING SHOP </span>
+                    </div>
+
+                    <div class="cty-about mt-2">
+                        <span class="contact-icon">
+                            <span><i class="fa-solid fa-bookmark"></i></span>
+                        </span> 
+                        <div class="contact-detail">
+                            Chuyên cung cấp các loại quần áo chất lượng cao. Mang đến niềm vui cho mọi người.
+                        </div>
+                    </div>
+
+                    <div class="cty-ban-quyen mt-2">
+                        <span class="contact-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                        <div class="contact-detail">
+                            © Mọi hình ảnh được sử dụng trong website thuộc quyền sở hữu của
+                            <a href="https://VGKING.com.vn/">VGKINGShop</a>.
+                            Mọi giao dịch đều là ảo không thể thanh toán.
+                        </div>
+                    </div>
+
+                    <div class="cty-muc-dich mt-2">
+                        <span class="contact-icon">
+                            <i class="fa-solid fa-school"></i>
+                        </span>
+                        <div class="contact-detail">
+                            Đây là dự án bài tập lớn của môn Hệ thống Công nghệ
+                            website. Thực hiện viết và xây dựng lên website bán hàng. Mọi hình ảnh và sản phẩm
+                            trong
+                            website chỉ mang tính thử nghiệm, không mang tính chất thương mại.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- liên hệ -->
+                <div class="col-md-3 mt-3">
+                    <div class="cty-title-contact">
+                        <span class="ten-cty">Liên hệ</span>
+                    </div>
+
+                    <div class="cty-address mt-2">
+                        <span class="contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <div class="contact-detail">
+                            Địa chỉ: 123 Đường Ngọt Ngào, Phường 5, Quận 10, TP.HCM
+                        </div>
+                    </div>
+
+                    <div class="cty-tel mt-2">
+                        <span class="contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+                        <div class="contact-detail">
+                            <a href="tel:+028 987 6543">Điện thoại: +028 987 6543</a>
+                        </div>
+                    </div>
+
+                    <div class="cty-mail mt-2">
+                        <span class="contact-icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </span>
+                        <div class="contact-detail">
+                            <a href="mailto:cskh@vgking.com">Email: cskh@vgking.com</a>
+                        </div>
+                    </div>
+
+                    <div class="cty-web mt-2">
+                        <span class="contact-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </span>
+                        <div class="contact-detail">
+                            <a href="https://VGKING.com.vn/">Website: www.VGKING.com.vn</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Theo dõi chúng tôi -->
+                <div class="col-md-4 mt-3">
+                    <div class="cty-follow-us mb-3">
+                        <span class="ten-cty mb-2">Tương tác với chúng tôi</span>
+                        <ul id="bottom-social-media" class="font-size-lagre">
+                            <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-facebook"></i></a></li>
+                            <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-instagram"></i></a></li>
+                            <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-tiktok"></i></a></li>
+                            <li class="list-inline-item mx-2"><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-3">
+                        <span class="ten-cty my-2">Phương thức thanh toán</span>
+                        <ul class="nav" id="bottom-payment">
+                            <li class="mx-1"><img src="../images/tt1.jpg" alt=""></li>
+                            <li class="mx-1"><img src="../images/tt2.jpg" alt=""></li>
+                            <li class="mx-1"><img src="../images/tt3.jpg" alt=""></li>
+                        </ul>
+                    </div>
+
+                    <div class="mb-3">
+                        <span class="ten-cty my-2">Phương thức vận chuyển</span>
+                        <ul class="nav" id="bottom-transport">
+                            <li class="mx-1"><img src="../images/vc1.jpg" alt=""></li>
+                            <li class="mx-1"><img src="../images/vc2.png" alt=""></li>
+                            <li class="mx-1"><img src="../images/vc3.jpg" alt=""></li>
+                            <li class="mx-1"><img src="../images/vc4.jpg" alt=""></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+   <!-- footer bottom -->
+            <div id="footer-bottom">
+                <div class="row" style=" width: 100%;">
+                    <div class="col-md-12">
+                        <p> © 2025 VGKING Shop . All Right Reserved. VGKING SHOP.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer endd -->
+</body>
+</html>
